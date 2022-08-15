@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/1cc5c0f5a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./image/white moon icon.png" id="icon" alt="">
+               <ul id="side-menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+               </ul> 
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Legal Practitioner</p>
+                <h1>Hello! I am <span>Ezinma</span><br> Arimah from <span>Nigeria</span> </h1>
+            </div>
+        </div>
+    </div>
+    <!-- ..........about page.............. -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                  <img src="image/brown robe.JPG" alt="">  
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Name:Ezinma Arimah</p>
+                    <p>Address: No 3 Houston Boulevard Independence layout Enugu</p>
+                    <p>Date of Birth: 01/08/1988</p>
+                    <p>Hobbies: Reading, Creating Website, Learning New Things</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                          <li><span>Legal Drafting</span><br>Drafting of Deeds, Agreements, Wills and Legal Documents</li>  
+                          <li><span>Corporate Affairs</span><br>Company and Business Name Registration</li>  
+                          <li><span>Solicitor of the law</span><br>Advice and Representation of any Legal Issue </li>  
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                          <li><span>2021 - Current</span><br>Arimah Igwe Chambers</li>  
+                          <li><span>2019 - 2021</span><br>Ichie Ezechikwado Chambers</li>  
+                          <li><span>2012 - 2019</span><br>Avah & Avah Chambers</li>  
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                          <li><span>2017</span><br>LLM University of Hertfordshire</li>  
+                          <li><span>2012</span><br>BL Enugu State Law School</li>  
+                          <li><span>2010</span><br>LLB Igbinedion University Benin City</li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------------------------services--------------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1> 
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-building"></i>
+                <h2>Corporate Affairs</h2>
+                <p>I offer Legal advice in various Corporate Affair issues such as Company and Business name Registration. Filling of Annual Returns. Incorporation of Different Types of Companies and well as resolving any query concerning an application to the Corporate Affairs Commision Nigeria.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-scale-balanced"></i>
+                <h2>Solicitor of the Law</h2>
+                <p>Having legal troubles and need advice or urgent Legal Representation in the Nigerian Court of Law? Look no further. I am well versed in the various Nigerian Court laws and will offer suitable advice and Representation.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-contract"></i>
+                <h2>Legal Drafting</h2>
+                <p>Having a detailed written agreement when making a contract of any kind is very important. I offer Legal Drafting services for various needs such as Will, Deeds, Lease, Sublease, Memorandum of Understanding among Others.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<!--------------------------------------Portfolio----------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+         <div class="worklist">
+            <div class="work">
+                <img src="./image/images.jpg" alt="">
+                <div class="layer">
+                    <h3>Corporate Affairs</h3>
+                    <p>Corporate Affair issues such as Company and Business name Registration among others.</p>
+                    <a href="#"><i class="fa-solid fa-building"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./image/Nigerian Lady Justice.jpg" alt="">
+                <div class="layer">
+                    <h3>Solicitor of the Law</h3>
+                    <p>Soliciting for a Client's cause in the Nigerian Court of law with the upmost dedication and passion.</p>
+                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./image/books.jpg" alt="">
+                <div class="layer">
+                    <h3>Legal Drafting</h3>
+                    <p>Legal Drafting services for various needs such as Wills, Deeds, Lease, Sublease, Memorandum of Understanding among Others.</p>
+                    <a href="#"><i class="fa-solid fa-file-contract"></i></a></a>
+                </div>
+            </div>
+         </div>
+         <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ======================================contact===================== 
+-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-arrow-up-right-from-square"></i>ezinmaarimah@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>09134826232</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/?_rdc=1&_rdrn"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/home"><i class="fa-brands fa-twitter" ></i></a>
+                </div>
+                <a href="./image/CV_(Ezinma_Arimah).docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <p><span>&copy;</span>Copyright Ezinma Arimah Niit 2022 Web Design Project</p>
+    </div>
+</div>
+
+
+    <script>
+
+     var tablinks = document.getElementsByClassName("tab-links"); 
+     var tabcontents = document.getElementsByClassName("tab-contents"); 
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("side-menu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbypUpw3AT5Yto07KlDkQ0DwGmJwyPyeXqvUXxDMz_x9rswid9x2Ui7YMYFBzvnMGYDC/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<!-- -----------------------night mode----------------------- -->
+<script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "./image/white sun icon.png"
+        }else{
+            icon.src = "./image/white moon icon.png"
+        }
+    }
+</script>
+</body>
+</html>
