@@ -176,6 +176,10 @@ nav ul li a:hover::after{
 
 /* ----------------services-------------------- */
 
+.upload{
+    text-decoration: none;
+}
+
 #services{
     padding: 30px 0;
 }
@@ -393,7 +397,7 @@ form btn2{
 nav .fa-solid{
     display: none;
 }
-@media screen and (max-width:600px){
+/* @media screen and (max-width:600px){
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -474,4 +478,118 @@ nav ul .fa-solid{
 .tab-contents a{
     text-decoration: none;
 
+} */
+
+
+@media screen and (max-width:600px){
+    .header-text{
+    margin-top: 50%;
+    font-size: 14px;
+    }
+    .header-text h1{
+    font-size: 26px;
+    }
+    nav .fa-solid{
+    display: block;
+    font-size: 20px;
+    }
+    nav ul{
+    background: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+    }
+    nav ul.show{
+    right: 0;
+    }
+    nav ul li{
+    display: block;
+    margin: 20px;
+    }
+    nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    }
+    .sub-title{
+    font-size: 30px;
+    }
+    .about-col-1, .about-col-2{
+    flex-basis: 100%;
+    }
+    .about-col-1{
+    margin-bottom: 20px;
+    }
+    .about-col-2{
+    font-size: 12px;
+    }
+    .tablinks{
+    font-size: 14px;
+    margin-right: 10px;
+    }
+    .contact-left, .contact-right{
+    flex-basis: 100%;
+    }
+    .copy-right{
+    font-size: 12px;
+    }
+    #msg{
+    color: #61b752;
+    margin-top: -20px;
+    display: block;
+    font-size: 14px;
+    }
+    .upload{
+    text-decoration: none;
+    font-size: 14px;
+    }
+    .tab-contents a{
+    text-decoration: none;
+    font-size: 14px;
+    }
+    .worklist {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+        margin-top: 30px;
+    }
+
+    .layer {
+        font-size: 12px;
+        padding: 0 20px;
+    }
+
+    .layer h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .layer a {
+        font-size: 14px;
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+    }
 }
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
